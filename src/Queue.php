@@ -18,4 +18,10 @@ class Queue
     {
         return count($this->items);
     }
+
+    // clear the queue
+    public function clear()
+    {
+        $this->items = [];
+    }
 }
