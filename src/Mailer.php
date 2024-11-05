@@ -5,6 +5,9 @@ class Mailer
 
     public function sendMessage($email, $message)
     {
+        if (empty($email)) {
+            throw new Exception();
+        }
 
         sleep(3);
 
